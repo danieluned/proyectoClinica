@@ -27,14 +27,14 @@ public class DAOMysqlUsuario implements InterfazDAOUsuario {
 		
 		try{
 			db.abrirConexion();
-			String sql =  "select * from usuario where usuario like '"+usuario.getUsuario()+"' and password like '"+usuario.getPassword()+"';";
+			String sql =  "select * from usuario where usuario like and password like '"+usuario.getPassword()+"';";
 			System.out.println(sql);
 			ResultSet rs = db.ejecutarConsulta(sql);
 			while (rs.next()){
 				user = new Usuario();
-				user.setUsuario(rs.getString("usuario"));
+				user.setLogin(rs.getString("login"));
 				user.setPassword(rs.getString("password"));
-				user.setJsonConfi(rs.getString("jsonConfi"));
+				
 			}
 		}catch (Exception e){
 			System.out.println("Error verificando el usuario");
@@ -57,9 +57,9 @@ public class DAOMysqlUsuario implements InterfazDAOUsuario {
 		try{
 			db.abrirConexion();
 			String sql =  "insert into usuario (usuario,password,jsonConfi) values ("+
-					 "'"+usuario.getUsuario()+"'"+","+
+					
 					 "'"+usuario.getPassword()+"'"+","+
-					 "'"+usuario.getJsonConfi()+"'"+""+
+					
 					 ");";
 			if (db.ejecutarUpdate(sql)>0){
 				correcto = true;

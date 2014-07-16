@@ -1,29 +1,23 @@
 package beans;
 
-import java.util.ArrayList;
-/**
- * Clase Usuario
- * Esta clase sera usada para contener la información de los usuarios
- * que accedan al sistema.
- * @author alumno
- *
- */
 public class Usuario {
-	String usuario;
-	String password;
-	String jsonConfi;
-	ArrayList<Evento> eventos;
+	private String login;
+	private String password;
+	private String tipo;
+	private String nombre;
+	private String fechaNacimiento;
+	private int clinica;
 	
 	public Usuario(){
-		
+	
 	}
 
-	public String getUsuario() {
-		return usuario;
+	public String getLogin() {
+		return login;
 	}
 
-	public void setUsuario(String usuario) {
-		this.usuario = usuario;
+	public void setLogin(String login) {
+		this.login = login;
 	}
 
 	public String getPassword() {
@@ -34,20 +28,36 @@ public class Usuario {
 		this.password = password;
 	}
 
-	public String getJsonConfi() {
-		return jsonConfi;
+	public String getTipo() {
+		return tipo;
 	}
 
-	public void setJsonConfi(String jsonConfi) {
-		this.jsonConfi = jsonConfi;
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 
-	public ArrayList<Evento> getEventos() {
-		return eventos;
+	public String getNombre() {
+		return nombre;
 	}
 
-	public void setEventos(ArrayList<Evento> eventos) {
-		this.eventos = eventos;
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getFechaNacimiento() {
+		return fechaNacimiento;
+	}
+
+	public void setFechaNacimiento(String fechaNacimiento) {
+		this.fechaNacimiento = fechaNacimiento;
+	}
+
+	public int getClinica() {
+		return clinica;
+	}
+
+	public void setClinica(int clinica) {
+		this.clinica = clinica;
 	}
 	
 }

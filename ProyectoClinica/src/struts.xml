@@ -10,18 +10,8 @@
 	
 	
 	<package name="default" namespace="/" extends="struts-default">
-		<interceptors>	
-			<interceptor name="comprobarSession" class="proyectoFP.interceptores.ComprobarSessionInterceptor"></interceptor>
- 			<interceptor-stack name="senecesitaSession">
- 				<interceptor-ref name="comprobarSession"/>
-	     		<interceptor-ref name="defaultStack" />
-	     	</interceptor-stack>
-		</interceptors>
-		 
-		 <global-results>
-		 	<result name="errorLogin">WEB-INF/jsp/index.jsp</result>
-		 </global-results>
-		 
+		
+		
 		<!--  Para redirigir a una página que no se encuentre -->
 		<action name="*">
 			<result>WEB-INF/jsp/index.jsp</result>

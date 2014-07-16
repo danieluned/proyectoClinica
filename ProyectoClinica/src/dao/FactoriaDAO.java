@@ -9,13 +9,6 @@ public class FactoriaDAO {
 		}
 		
 	}
-	public static InterfazDAOEvento obtenerDAOEvento (String basededatos) throws Exception{
-		if ("MySql".equals(basededatos)){
-			return new DAOMysqlEvento();
-		}else {
-			return null;
-		}
-		
-	}
+	
 	
 }
