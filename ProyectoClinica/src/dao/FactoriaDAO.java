@@ -1,9 +1,9 @@
 package dao;
 
 public class FactoriaDAO {
-	public static InterfazDAOUsuario obtenerDAOUsuario (String basededatos) throws Exception{
+	public static InterfazDAO obtenerDAO (String basededatos) throws Exception{
 		if ("MySql".equals(basededatos)){
-			return new DAOMysqlUsuario();
+			return new DAOMysql();
 		}else {
 			return null;
 		}

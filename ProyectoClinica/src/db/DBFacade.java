@@ -11,7 +11,7 @@ import javax.sql.DataSource;
 
 public class DBFacade {
 
-	private static final String DATABASE = "proyectofp";
+	private static final String DATABASE = "proyectoClinica";
 	private Connection con = null;
 	private DataSource source;
 	private PreparedStatement prepS;

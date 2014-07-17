@@ -1,12 +1,14 @@
 package beans;
 
+import java.util.Date;
+
 public class Usuario {
 	private String login;
 	private String password;
 	private String tipo;
 	private String nombre;
-	private String fechaNacimiento;
-	private int clinica;
+	private Date fechaNacimiento;
+	private String clinica;
 	
 	public Usuario(){
 	
@@ -44,20 +46,25 @@ public class Usuario {
 		this.nombre = nombre;
 	}
 
-	public String getFechaNacimiento() {
+	
+	public Date getFechaNacimiento() {
 		return fechaNacimiento;
 	}
 
-	public void setFechaNacimiento(String fechaNacimiento) {
+	public void setFechaNacimiento(Date fechaNacimiento) {
 		this.fechaNacimiento = fechaNacimiento;
 	}
 
-	public int getClinica() {
+	public String getClinica() {
 		return clinica;
 	}
 
-	public void setClinica(int clinica) {
+	public void setClinica(String clinica) {
 		this.clinica = clinica;
 	}
-	
+	public String toString(){
+		String str = "";
+		str += login+"."+clinica+"."+nombre+"."+password+"."+tipo+"."+fechaNacimiento;
+		return str;
+	}
 }
