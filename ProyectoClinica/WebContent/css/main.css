@@ -158,10 +158,22 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+.form-signin{
+	margin-top:150px;	
+}
+.navbar-inverse {
+	background-color: #3276B1;
+	border-color: #080808;
+}
 
+.navbar-static-top {
+  margin-bottom: 19px;
+}
 
-
-
+.blanco {
+	
+	color: white;font-weight: bolder;
+}
 
 
 

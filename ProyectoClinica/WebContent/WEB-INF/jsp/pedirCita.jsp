@@ -1,15 +1,63 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@ taglib uri="/struts-tags" prefix="s"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-	<h1>Página para pedir Cita</h1>
-	<p>Selecciona médico</p>
-	<s:select list="medicos" listValue="nombre" listTitle="nombre"></s:select>
-</body>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="description" content="Pantalla de juego"/>
+		<title><s:text name="patallaJuego"/></title>
+		<link rel="stylesheet" href="css/normalize.min.css"/>
+        <link rel="stylesheet" href="css/black-tie/jquery-ui-1.10.4.custom.css"/>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="js/jquery-1.10.2.js"></script>
+		<script src="js/jquery-ui-1.10.4.custom.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<style>
+			.form-signin{
+				
+				margin-top:150px;	
+			}
+			.navbar-inverse {
+			    background-color: #3276B1;
+			    border-color: #080808;
+			}
+		</style>
+	</head>
+	 <body>
+	 	<!-- Cabecera -->
+	 	<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+			  <div class="container-fluid">
+				<div class="navbar-header">
+				 <a class="navbar-brand" href="#" style="color: white;font-weight: bolder;">App Medic</a>
+				</div>
+			 </div>
+		</div>	
+	 	<!-- Fin Cabecera -->
+	 	
+	 	<div class="container">
+			<div class="col-sm-6 col-sm-offset-3">
+		   	<h1>PÃ¡gina de Cita</h1>
+			<p>${session.Usuario}</p>
+			</div>
+		</div>
+	 </body>
 </html>
+
+
+
+		
+		
+		
+			
+			
+			
+		
+
+

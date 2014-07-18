@@ -19,13 +19,23 @@
 		<script src="js/jquery-1.10.2.js"></script>
 		<script src="js/jquery-ui-1.10.4.custom.js"></script>
 		<script src="js/bootstrap.js"></script>
+		<style>
+			.form-signin{
+				
+					
+			}
+			.navbar-inverse {
+			    background-color: #3276B1;
+			    border-color: #080808;
+			}
+		</style>
 	</head>
 	 <body>
 	 	<!-- Cabecera -->
 	 	<div class="navbar navbar-inverse navbar-static-top" role="navigation">
 			  <div class="container-fluid">
 				<div class="navbar-header">
-				 <a class="navbar-brand" href="#" style="color: white;font-weight: bolder;">App Medic</a>
+				 <a class="navbar-brand blanco" href="#">App Medic</a>
 				</div>
 			 </div>
 		</div>	
@@ -33,8 +43,17 @@
 	 	
 	 	<div class="container">
 			<div class="col-sm-6 col-sm-offset-3">
-		   	<h1>Página de Medico</h1>
-			<p>${session.Usuario}</p>
+		    <form class="form-signin" role="form" action="login" method="post">
+		        <h2 class="form-signin-heading">
+					Por favor introduce tus datos.
+				</h2>
+		        <input class="form-control" type="text" autofocus="" required="" placeholder="Usuario" name="usuario.login"></input>
+		        <input class="form-control" type="password"  placeholder="Contraseña" name="usuario.password"></input>
+		       
+		        <button class="btn btn-lg btn-primary btn-block" type="submit">
+					 Entrar
+				</button>
+		    </form>
 			</div>
 		</div>
 	 </body>
@@ -49,5 +68,3 @@
 			
 			
 		
-
-
